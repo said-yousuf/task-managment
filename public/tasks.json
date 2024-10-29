@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Project Proposal",
+    "category": "Work",
+    "addDate": "2024-03-01",
+    "description": "Draft and finalize the Q2 project proposal for client review. Include budget estimates and timeline projections.",
+    "deadline": "2024-03-15"
+  },
+  {
+    "id": 2,
+    "title": "Weekly Team Meeting",
+    "category": "Work",
+    "addDate": "2024-03-02",
+    "description": "Review progress and discuss upcoming milestones with the development team.",
+    "deadline": "2024-03-08"
+  },
+  {
+    "id": 3,
+    "title": "Grocery Shopping",
+    "category": "Personal",
+    "addDate": "2024-03-03",
+    "description": "Buy weekly groceries and household supplies from Walmart.",
+    "deadline": "2024-03-05"
+  },
+  {
+    "id": 4,
+    "title": "Dentist Appointment",
+    "category": "Health",
+    "addDate": "2024-03-04",
+    "description": "Regular dental checkup and cleaning at Dr. Smith's clinic.",
+    "deadline": "2024-03-20"
+  },
+  {
+    "id": 5,
+    "title": "Code Review",
+    "category": "Work",
+    "addDate": "2024-03-05",
+    "description": "Review pull requests for the new feature implementation.",
+    "deadline": "2024-03-07"
+  },
+  {
+    "id": 6,
+    "title": "Birthday Party Planning",
+    "category": "Personal",
+    "addDate": "2024-03-06",
+    "description": "Plan and organize Sarah's surprise birthday party. Order cake and decorations.",
+    "deadline": "2024-03-25"
+  },
+  {
+    "id": 7,
+    "title": "Quarterly Tax Filing",
+    "category": "Finance",
+    "addDate": "2024-03-07",
+    "description": "Prepare and submit quarterly tax documents with updated financial records.",
+    "deadline": "2024-03-31"
+  },
+  {
+    "id": 8,
+    "title": "Gym Session",
+    "category": "Health",
+    "addDate": "2024-03-08",
+    "description": "Weekly strength training session focusing on upper body.",
+    "deadline": "2024-03-08"
+  },
+  {
+    "id": 9,
+    "title": "Client Presentation",
+    "category": "Work",
+    "addDate": "2024-03-09",
+    "description": "Present new product features to key stakeholders and gather feedback.",
+    "deadline": "2024-03-16"
+  },
+  {
+    "id": 10,
+    "title": "Car Maintenance",
+    "category": "Personal",
+    "addDate": "2024-03-10",
+    "description": "Take car for regular maintenance and oil change.",
+    "deadline": "2024-03-17"
+  },
+  {
+    "id": 11,
+    "title": "Update Portfolio",
+    "category": "Career",
+    "addDate": "2024-03-11",
+    "description": "Add recent projects and update skills section in professional portfolio.",
+    "deadline": "2024-03-18"
+  },
+  {
+    "id": 12,
+    "title": "Home Cleaning",
+    "category": "Personal",
+    "addDate": "2024-03-12",
+    "description": "Deep clean house including windows and carpets.",
+    "deadline": "2024-03-14"
+  },
+  {
+    "id": 13,
+    "title": "Team Building Event",
+    "category": "Work",
+    "addDate": "2024-03-13",
+    "description": "Organize virtual team building activity for remote employees.",
+    "deadline": "2024-03-27"
+  },
+  {
+    "id": 14,
+    "title": "Learn React Hooks",
+    "category": "Education",
+    "addDate": "2024-03-14",
+    "description": "Complete online course on advanced React hooks and state management.",
+    "deadline": "2024-03-28"
+  },
+  {
+    "id": 15,
+    "title": "Budget Review",
+    "category": "Finance",
+    "addDate": "2024-03-15",
+    "description": "Monthly budget review and expense tracking update.",
+    "deadline": "2024-03-20"
+  },
+  {
+    "id": 16,
+    "title": "Write Blog Post",
+    "category": "Content",
+    "addDate": "2024-03-16",
+    "description": "Write technical blog post about recent project learnings.",
+    "deadline": "2024-03-23"
+  },
+  {
+    "id": 17,
+    "title": "Family Dinner",
+    "category": "Personal",
+    "addDate": "2024-03-17",
+    "description": "Host weekly family dinner with special menu planning.",
+    "deadline": "2024-03-24"
+  },
+  {
+    "id": 18,
+    "title": "Database Optimization",
+    "category": "Work",
+    "addDate": "2024-03-18",
+    "description": "Optimize database queries for better performance.",
+    "deadline": "2024-03-22"
+  },
+  {
+    "id": 19,
+    "title": "Volunteer Work",
+    "category": "Community",
+    "addDate": "2024-03-19",
+    "description": "Help at local food bank distribution event.",
+    "deadline": "2024-03-26"
+  },
+  {
+    "id": 20,
+    "title": "Password Updates",
+    "category": "Security",
+    "addDate": "2024-03-20",
+    "description": "Update passwords for all critical accounts and enable 2FA where possible.",
+    "deadline": "2024-03-21"
+  },
+  {
+    "id": 21,
+    "title": "Networking Event",
+    "category": "Career",
+    "addDate": "2024-03-21",
+    "description": "Attend local tech meetup and connect with industry professionals.",
+    "deadline": "2024-03-28"
+  },
+  {
+    "id": 22,
+    "title": "API Documentation",
+    "category": "Work",
+    "addDate": "2024-03-22",
+    "description": "Update API documentation with new endpoints and examples.",
+    "deadline": "2024-03-29"
+  },
+  {
+    "id": 23,
+    "title": "Vacation Planning",
+    "category": "Personal",
+    "addDate": "2024-03-23",
+    "description": "Research and book summer vacation accommodations and flights.",
+    "deadline": "2024-04-05"
+  },
+  {
+    "id": 24,
+    "title": "Health Insurance Review",
+    "category": "Health",
+    "addDate": "2024-03-24",
+    "description": "Review and update health insurance coverage for family.",
+    "deadline": "2024-03-31"
+  },
+  {
+    "id": 25,
+    "title": "Mobile App Testing",
+    "category": "Work",
+    "addDate": "2024-03-25",
+    "description": "Conduct user acceptance testing for new mobile app features.",
+    "deadline": "2024-03-28"
+  },
+  {
+    "id": 26,
+    "title": "Garden Maintenance",
+    "category": "Home",
+    "addDate": "2024-03-26",
+    "description": "Spring garden cleanup and planting new vegetables.",
+    "deadline": "2024-03-30"
+  },
+  {
+    "id": 27,
+    "title": "Investment Review",
+    "category": "Finance",
+    "addDate": "2024-03-27",
+    "description": "Quarterly review of investment portfolio and rebalancing.",
+    "deadline": "2024-04-02"
+  },
+  {
+    "id": 28,
+    "title": "Charity Run",
+    "category": "Health",
+    "addDate": "2024-03-28",
+    "description": "Participate in local 5K charity run event.",
+    "deadline": "2024-04-07"
+  },
+  {
+    "id": 29,
+    "title": "Server Maintenance",
+    "category": "Work",
+    "addDate": "2024-03-29",
+    "description": "Perform routine server maintenance and security updates.",
+    "deadline": "2024-03-30"
+  },
+  {
+    "id": 30,
+    "title": "Annual Report Review",
+    "category": "Work",
+    "addDate": "2024-03-30",
+    "description": "Review and approve the annual financial report for stakeholders.",
+    "deadline": "2024-04-15"
+  },
+  {
+    "id": 31,
+    "title": "Learn TypeScript",
+    "category": "Education",
+    "addDate": "2024-03-31",
+    "description": "Complete TypeScript fundamentals course and practice exercises.",
+    "deadline": "2024-04-20"
+  },
+  {
+    "id": 32,
+    "title": "Home Office Setup",
+    "category": "Home",
+    "addDate": "2024-04-01",
+    "description": "Organize and upgrade home office with new equipment and ergonomic furniture.",
+    "deadline": "2024-04-10"
+  },
+  {
+    "id": 33,
+    "title": "Social Media Strategy",
+    "category": "Marketing",
+    "addDate": "2024-04-02",
+    "description": "Develop Q2 social media content strategy and scheduling.",
+    "deadline": "2024-04-09"
+  },
+  {
+    "id": 34,
+    "title": "Dental Insurance Claim",
+    "category": "Health",
+    "addDate": "2024-04-03",
+    "description": "Submit and follow up on recent dental procedure insurance claim.",
+    "deadline": "2024-04-10"
+  },
+  {
+    "id": 35,
+    "title": "Code Refactoring",
+    "category": "Work",
+    "addDate": "2024-04-04",
+    "description": "Refactor legacy code base to improve maintainability and performance.",
+    "deadline": "2024-04-18"
+  }
+]
