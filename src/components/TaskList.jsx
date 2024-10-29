@@ -6,6 +6,8 @@ const TaskList = ({ tasks }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortField, setSortField] = useState("title");
   const [sortDirection, setSortDirection] = useState("asc");
+  const [currentPage, setCurrentPage] = useState(1);
+  const tasksPerPage = 10;
 
   // Filter tasks based on search term
   const filteredTasks = tasks.filter((task) =>
@@ -16,7 +18,6 @@ const TaskList = ({ tasks }) => {
 
   // Sort tasks
   const sortedTasks = [...filteredTasks].sort((a, b) => {
-    // Convert field names to match the actual property names in the task object
     const fieldMapping = {
       adddate: "addDate",
       deadline: "deadline",
@@ -29,18 +30,28 @@ const TaskList = ({ tasks }) => {
     const aValue = a[actualField];
     const bValue = b[actualField];
 
-    // Special handling for dates
     if (actualField === "addDate" || actualField === "deadline") {
       return sortDirection === "asc"
         ? new Date(aValue) - new Date(bValue)
         : new Date(bValue) - new Date(aValue);
     }
 
-    // Default string comparison
     return sortDirection === "asc"
       ? aValue.toString().localeCompare(bValue.toString())
       : bValue.toString().localeCompare(aValue.toString());
   });
+
+  // Pagination calculations
+  const totalPages = Math.ceil(sortedTasks.length / tasksPerPage);
+  const indexOfLastTask = currentPage * tasksPerPage;
+  const indexOfFirstTask = indexOfLastTask - tasksPerPage;
+  const currentTasks = sortedTasks.slice(indexOfFirstTask, indexOfLastTask);
+
+  // Generate page numbers
+  const pageNumbers = [];
+  for (let i = 1; i <= totalPages; i++) {
+    pageNumbers.push(i);
+  }
 
   const handleSort = (field) => {
     const normalizedField = field.toLowerCase().replace(" ", "");
@@ -52,7 +63,12 @@ const TaskList = ({ tasks }) => {
     }
   };
 
-  // Table headers with sort indicators
+  // Reset to first page when searching
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+    setCurrentPage(1);
+  };
+
   const headers = [
     { label: "Title", field: "title" },
     { label: "Category", field: "category" },
@@ -69,7 +85,7 @@ const TaskList = ({ tasks }) => {
           type="text"
           placeholder="Search tasks..."
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={handleSearch}
           className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
         />
 
@@ -124,16 +140,57 @@ const TaskList = ({ tasks }) => {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
-            {sortedTasks.map((task) => (
+            {currentTasks.map((task) => (
               <TaskItem key={task.id} task={task} />
             ))}
           </tbody>
         </table>
       </div>
 
-      {/* Results count */}
-      <div className="mt-4 text-sm text-gray-600">
-        Showing {sortedTasks.length} of {tasks.length} tasks
+      {/* Pagination */}
+      <div className="mt-4 flex items-center justify-between">
+        <div className="text-sm text-gray-600">
+          Showing {indexOfFirstTask + 1} to{" "}
+          {Math.min(indexOfLastTask, sortedTasks.length)} of{" "}
+          {sortedTasks.length} tasks
+        </div>
+        <div className="flex space-x-2">
+          <button
+            onClick={() => setCurrentPage(currentPage - 1)}
+            disabled={currentPage === 1}
+            className={`px-3 py-1 rounded ${
+              currentPage === 1
+                ? "bg-gray-100 text-gray-400 cursor-not-allowed"
+                : "bg-indigo-600 text-white hover:bg-indigo-700"
+            }`}
+          >
+            Previous
+          </button>
+          {pageNumbers.map((number) => (
+            <button
+              key={number}
+              onClick={() => setCurrentPage(number)}
+              className={`px-3 py-1 rounded ${
+                currentPage === number
+                  ? "bg-indigo-600 text-white"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              }`}
+            >
+              {number}
+            </button>
+          ))}
+          <button
+            onClick={() => setCurrentPage(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            className={`px-3 py-1 rounded ${
+              currentPage === totalPages
+                ? "bg-gray-100 text-gray-400 cursor-not-allowed"
+                : "bg-indigo-600 text-white hover:bg-indigo-700"
+            }`}
+          >
+            Next
+          </button>
+        </div>
       </div>
     </div>
   );
