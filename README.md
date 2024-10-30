@@ -31,7 +31,3 @@ A modern, responsive task management application built with React and Vite, feat
 - **Tailwind CSS** - Styling and UI components
 - **React Router** - Navigation and routing
 - **PropTypes** - Type checking
-
-## Getting Started
-
-1. Clone the repository:

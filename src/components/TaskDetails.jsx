@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const TaskDetails = ({ tasks }) => {
   const navigate = useNavigate();
@@ -56,9 +57,12 @@ const TaskDetails = ({ tasks }) => {
       </div>
 
       <div className="mt-6 flex justify-end space-x-4">
-        <button className="inline-block rounded bg-blue-600 px-4 py-2 text-xs font-medium text-white hover:bg-blue-700">
+        <Link
+          to={`/tasks/${taskId}/edit`}
+          className="inline-block rounded bg-blue-600 px-4 py-2 text-xs font-medium text-white hover:bg-blue-700"
+        >
           Update
-        </button>
+        </Link>
         <button className="inline-block rounded bg-red-600 px-4 py-2 text-xs font-medium text-white hover:bg-red-700">
           Delete
         </button>
